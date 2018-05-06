@@ -26,7 +26,18 @@ def quicksort(arr):
         if len(arr) <= 1:
                 return arr, 0
         else:
-                split_index = partitionArr(arr, 0, len(arr), 0)
+                el_first = arr[0]
+                el_last = arr[-1]
+                idx_mid = int((len(arr)+1)/2) - 1
+                el_mid = arr[idx_mid]
+                tmp_list = [el_first, el_mid, el_last]
+                tmp_list.sort()
+                if tmp_list[1] == el_first:
+                        split_index = partitionArr(arr, 0, len(arr), 0)
+                elif tmp_list[1] == el_mid:
+                        split_index = partitionArr(arr, 0, len(arr), idx_mid)
+                else:
+                        split_index = partitionArr(arr, 0, len(arr), -1)
                 cmp_count = len(arr)-1
                 [arr[:split_index], ucnt] = quicksort(arr[:split_index])
                 [arr[split_index+1:], lcnt] = quicksort(arr[split_index+1:])
