@@ -4,13 +4,19 @@
         "version": "2.0.0",
         "tasks": [
                 {
-                        "label": "Build Inversions",
+                        "label": "Build QuickSort",
                         "type": "shell",
-                        "command": "python test_inversions.py",
+                        "command": "python test_quicksort.py",
                         "group": {
                                 "kind": "build",
                                 "isDefault": true
                         }
+                },
+                {
+                        "label": "Build Inversions",
+                        "type": "shell",
+                        "command": "python test_inversions.py",
+                        "group": "build"
                 },
                 {
                         "label": "Build Mergesort",
