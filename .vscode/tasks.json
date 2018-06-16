@@ -4,13 +4,25 @@
         "version": "2.0.0",
         "tasks": [
                 {
-                        "label": "Build QuickSort",
+                        "label": "Build Graph",
                         "type": "shell",
-                        "command": "python test_quicksort.py",
+                        "command": "python test_graphs.py",
                         "group": {
                                 "kind": "build",
                                 "isDefault": true
                         }
+                },
+                // {
+                //         "label": "Build QuickSort",
+                //         "type": "shell",
+                //         "command": "python test_quicksort.py",
+                //         "group": "build"
+                // },
+                {
+                        "label": "Build QuickSort",
+                        "type": "shell",
+                        "command": "python test_quicksort.py",
+                        "group": "build"
                 },
                 {
                         "label": "Build Inversions",
