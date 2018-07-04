@@ -6,18 +6,18 @@
                 {
                         "label": "Build Graph",
                         "type": "shell",
-                        "command": "python test_graphs.py",
+                        "command": "python twosome.py",
                         "group": {
                                 "kind": "build",
                                 "isDefault": true
                         }
                 },
-                // {
-                //         "label": "Build QuickSort",
-                //         "type": "shell",
-                //         "command": "python test_quicksort.py",
-                //         "group": "build"
-                // },
+                {
+                        "label": "Build QuickSort",
+                        "type": "shell",
+                        "command": "python test_graphs.py",
+                        "group": "build"
+                },
                 {
                         "label": "Build QuickSort",
                         "type": "shell",
