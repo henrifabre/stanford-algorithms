@@ -4,13 +4,19 @@
         "version": "2.0.0",
         "tasks": [
                 {
-                        "label": "Build Graph",
+                        "label": "Build Median",
                         "type": "shell",
-                        "command": "python twosome.py",
+                        "command": "python medianmaint.py",
                         "group": {
                                 "kind": "build",
                                 "isDefault": true
                         }
+                },
+                {
+                        "label": "Build Two Sum",
+                        "type": "shell",
+                        "command": "python twosome.py",
+                        "group": "build"
                 },
                 {
                         "label": "Build QuickSort",
