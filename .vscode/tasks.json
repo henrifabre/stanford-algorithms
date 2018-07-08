@@ -6,7 +6,7 @@
                 {
                         "label": "Build Median",
                         "type": "shell",
-                        "command": "python medianmaint.py",
+                        "command": "python test_medianmaint.py",
                         "group": {
                                 "kind": "build",
                                 "isDefault": true
